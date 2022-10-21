@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="tertiary" mode="ios">
+      <ion-title style="font-family:'Times New Roman';font-size: 200%;" >ACTIVACIÓN DE COMPONENTES</ion-title>     
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  fullscreen="true" >
+  <ion-title class="ion-text-center" style="padding:1%; font-family: Rockwell;">DIPLOMADO IOT</ion-title>
+  <div class="ion-text-center">
+    <ion-text class="ion-text-center">
+      Andres Felipe Mira Pineda - Juan Pablo Reyes Negrette
+    </ion-text>
+  </div>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="3">       
+        <ion-item lines="true" color="medium">
+          <ion-label class="ion-text-center" style="color:black; font-family:cursive; font-size:125%">BOMBILLO 1</ion-label>
+          <ion-icon name="bulb-outline" slot="start" style="color: white;" *ngIf="!bomb1"></ion-icon>
+          <ion-icon name="bulb-outline" slot="start" style="color: yellow;" *ngIf="bomb1"></ion-icon>
+          <ion-toggle (ionChange)="action1()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="3">          
+        <ion-item lines="true" color="medium">
+          <ion-label class="ion-text-center" style="color:black; font-family:cursive; font-size:125%">BOMBILLO 2</ion-label>
+          <ion-icon name="bulb-outline" slot="start" style="color: white;" *ngIf="!bomb2"></ion-icon>
+          <ion-icon name="bulb-outline" slot="start" style="color: yellow;" *ngIf="bomb2"></ion-icon>
+          <ion-toggle (ionChange)="action2()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="3">          
+        <ion-item lines="true" color="medium">
+          <ion-label class="ion-text-center" style="color:black; font-family:cursive; font-size:125%">BOMBILLO 3</ion-label>
+          <ion-icon name="bulb-outline" slot="start" style="color: white;" *ngIf="!bomb3"></ion-icon>
+          <ion-icon name="bulb-outline" slot="start" style="color: yellow;" *ngIf="bomb3"></ion-icon>
+          <ion-toggle (ionChange)="action3()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="3">          
+        <ion-item lines="true" color="medium">
+          <ion-label class="ion-text-center" style="color:black; font-family:cursive; font-size:125%">BOMBILLO 4</ion-label>
+          <ion-icon name="bulb-outline" slot="start" style="color: white;" *ngIf="!bomb4"></ion-icon>
+          <ion-icon name="bulb-outline" slot="start" style="color: yellow;" *ngIf="bomb4"></ion-icon>
+          <ion-toggle (ionChange)="action4()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>      
+</ion-content>
